@@ -56,6 +56,10 @@ def double_eights(n):
     >>> double_eights(80808080)
     False
     """
-    "*** YOUR CODE HERE ***"
+    while n > 0:
+        if n % 100 == 88:
+            return True
+        n = n//10
+    return False
 
 
